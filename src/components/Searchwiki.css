@@ -1,0 +1,45 @@
+/* .Searchwiki {
+    margin-top: 7vh;
+    flex-grow: 1;
+} */
+.Searchwiki h1 {
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+@media screen and (max-width: 650px) {
+    .Searchwiki h1  {
+        font-size: 2.5rem;
+    }
+}
+
+.Searchwiki input {
+    font-size: 1.2rem;
+    padding: 3px 20px;
+    width: 500px;
+    max-width: 80%;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.btn {
+    font-size: 1.2rem;
+    font-family: inherit;
+    border-radius: 5px;
+    padding: 3px 20px;
+}
+
+.btn:hover {
+    text-decoration: underline;
+}
+
+.btn--search {
+    background-color: rgb(59, 23, 0);
+    color: rgb(255, 244, 234);
+}
+
+.btn--random {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: rgb(59, 23, 0);
+}
