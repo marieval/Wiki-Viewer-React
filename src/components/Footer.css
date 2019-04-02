@@ -2,10 +2,43 @@
     align-self: stretch;
     background-color: rgba(43, 43, 43, 0.8);
     color: rgb(230, 230, 230);
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 15px;   
 }
 
+
+
+@media screen and (max-width: 650px) {
+    .Footer {
+    font-size: 0.9rem;
+    padding: 10px;   
+}
+}
+
+@media screen and (max-width: 450px) {
+    .Footer {
+    font-size: 0.8rem;
+    padding: 5px;   
+}
+}
+
+.Footer svg {
+    height: 1.2rem;
+    width: 1.2rem;
+    fill: rgb(230, 230, 230);
+}
+
+.Footer span {
+    font-size: 0.7rem;
+}
+
+@media screen and (max-width: 650px) {
+    .Footer span {
+    font-size: 0.6rem;
+}
+}
+
+/* 
 .Footer a {
     text-decoration: none;
     color: rgb(160, 169, 255);
@@ -14,4 +47,4 @@
 .Footer a:hover {
     text-decoration: underline;
     transform: translateY(-1px);
-}
+} */
