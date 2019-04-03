@@ -1,50 +1,43 @@
 .Footer {
     align-self: stretch;
-    background-color: rgba(43, 43, 43, 0.8);
+    background-color: rgba(43, 43, 43, 0.9);
     color: rgb(230, 230, 230);
-    font-size: 1rem;
-    padding: 15px;   
+    font-size: 0.9rem;
+    padding: 5px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-
 
 @media screen and (max-width: 650px) {
-    .Footer {
-    font-size: 0.9rem;
-    padding: 10px;   
-}
-}
-
-@media screen and (max-width: 450px) {
     .Footer {
     font-size: 0.8rem;
     padding: 5px;   
 }
 }
 
-.Footer svg {
-    height: 1.2rem;
-    width: 1.2rem;
-    fill: rgb(230, 230, 230);
+@media screen and (max-width: 450px) {
+    .Footer {
+    font-size: 0.7rem;
+    padding: 5px;   
+}
 }
 
-.Footer span {
-    font-size: 0.7rem;
+.Footer > * {
+    display: flex;
+    align-items: center;
+}
+
+.Footer img {
+    height: 2rem;
+    width: 2rem;
+    margin-left: 10px;
 }
 
 @media screen and (max-width: 650px) {
-    .Footer span {
-    font-size: 0.6rem;
+    .Footer img {
+        height: 1.7rem;
+        width: 1.7rem;
+        margin-left: 8px;
+    }
 }
-}
-
-/* 
-.Footer a {
-    text-decoration: none;
-    color: rgb(160, 169, 255);
-}
-
-.Footer a:hover {
-    text-decoration: underline;
-    transform: translateY(-1px);
-} */

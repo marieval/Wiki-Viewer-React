@@ -21,15 +21,14 @@ class Searchwiki extends Component {
                     >Search</button>
                 </form>
 
-                <div>
-                    <a href="https://en.wikipedia.org/wiki/Special:Random"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                        <button
-                            className="btn btn--random"
-                            type="submit">Read a random article</button>
-                    </a>
-                </div>
+                <a href="https://en.wikipedia.org/wiki/Special:Random"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <button
+                        className="btn btn--random"
+                        type="submit">Read a random article</button>
+                </a>
+
             </div >
         )
     }

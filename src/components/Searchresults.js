@@ -15,7 +15,6 @@ const Searchresults = (props) => {
                     )
                 })
             }
-
         </div>
     )
 }

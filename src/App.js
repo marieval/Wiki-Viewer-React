@@ -25,13 +25,11 @@ class App extends Component {
       errorStyle: { display: "none" }
     })
 
-    console.log("state.searchInput: ", this.state.searchInput);
     axios.get(`https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${this.state.searchInput}&origin=*&format=json`)
       .then((wikiData) => {
         this.setState({
           searchResults: wikiData.data.query.search
         })
-        console.log("searchResults: ", this.state.searchResults) // FUNGUJE
 
         if (this.state.searchResults.length === 0) {
           this.setState({
@@ -47,14 +45,12 @@ class App extends Component {
           errorStyle: { display: 'block' }
         });
       });
-
-
   }
 
   render() {
     let newSearchresults = null;
     if (this.state.searchResults.length > 0) {
-      console.log("render-searchResults > 0 !!!") // FUNGUJE
+      console.log("render-searchResults > 0 !!!")
       newSearchresults = (
         <div>
           <Searchresults results={this.state.searchResults} />
@@ -63,8 +59,8 @@ class App extends Component {
     }
 
     return (
-      <div className="App">   {/* display: flex, flex-direction: column */}
-        <div className="SearchwikiPart">  {/* flex-grow: 1; */}
+      <div className="App">
+        <div className="SearchwikiPart">
           <Searchwiki
             formSubmit={this.inputSubmitHandler}
             inputChange={this.inputChangeHandler}

@@ -1,7 +1,6 @@
 import React from "react";
 import "./Searchresult.css";
 
-
 const Searchresult = (props) => {
     return (
         <div className="Searchresult">
